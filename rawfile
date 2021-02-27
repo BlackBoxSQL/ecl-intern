@@ -1,0 +1,7 @@
+-- SELECT transaction_date, amount
+-- FROM journal_log_details
+-- INNER JOIN journal_log
+-- ON journal_log_details.journal_log_id = journal_log.id;
+SELECT transaction_date
+FROM journal_log
+WHERE transaction_date < 2021-02-26 09:22:34;

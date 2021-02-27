@@ -1,0 +1,5 @@
+SELECT transaction_date, amount
+FROM journal_log_details
+INNER JOIN journal_log
+ON journal_log_details.journal_log_id = journal_log.id
+WHERE transaction_date<="2021-02-21" LIMIT 2;
